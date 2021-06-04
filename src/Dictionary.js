@@ -5,7 +5,7 @@ import Response from "./Response";
 export default function Dictionary() {
 
     let [keyword, setKeyword] = useState("");
-    let [response, setResponse] = useState({});
+    let [response, setResponse] = useState(null);
 
     function handleResponse(response) {
         setResponse(response.data[0]);
