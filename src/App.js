@@ -11,6 +11,11 @@ function App() {
 
       <Dictionary />
 
+      <p className="signature">
+          This project is <a href="https://github.com/maggiegmcd/react-dictionary" target="_blank" rel="noopener noreferrer">open-sourced</a> and 
+          coded with ♥︎ by <a href="https://www.linkedin.com/in/maggiegmcd/" target="_blank" rel="noopener noreferrer">Maggie McDonald</a>.
+      </p>
+
     </div>
   );
 }
