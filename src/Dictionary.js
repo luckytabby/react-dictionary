@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Response from "./Response";
+import './App.css';
 
-export default function Dictionary() {
+export default function Dictionary(props) {
 
-    let [keyword, setKeyword] = useState("");
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [response, setResponse] = useState(null);
+    let [loaded, setLoaded] = useState(false)
 
     function handleResponse(response) {
         setResponse(response.data[0]);
     }
 
-    function search(event) {
-        event.preventDefault();
+    function search() {
 
         // documentation dictionaryapi.dev
 
@@ -22,27 +23,44 @@ export default function Dictionary() {
 
     }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
+    }
+
     function handleKeywordChange(event) {
         setKeyword(event.target.value);
     }
+
+    function load() {
+        setLoaded(true);
+        search();
+    }
+
+    if (loaded) {
  
-    return (
+        return (
 
-        <div className="Dictionary">
+            <div className="Dictionary">
 
-            <form className="Dictionary-form" onSubmit={search}>
+                <form className="Dictionary-form" onSubmit={handleSubmit}>
 
-                <input type="search" autoFocus="on"
-                placeholder="Enter a word..." onChange={handleKeywordChange}>
-                </input>
+                    <input type="search" autoFocus="on"
+                    placeholder="Enter a word..." onChange={handleKeywordChange}>
+                    </input>
 
-                <input type="submit"></input>
+                </form>
 
-            </form>
+                <Response response={response}/>
 
-            <Response response={response}/>
+            </div>
 
-        </div>
+        )
 
-    )
+    }
+
+    else {
+        load();
+        return null;
+    }
 }

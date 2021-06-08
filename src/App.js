@@ -9,7 +9,7 @@ function App() {
         Digital Dictionary
       </h1>
 
-      <Dictionary />
+      <Dictionary defaultKeyword="yeehaw" />
 
       <p className="App-signature">
           This project is <a href="https://github.com/maggiegmcd/react-dictionary" target="_blank" rel="noopener noreferrer">open-sourced</a> and 

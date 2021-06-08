@@ -6,6 +6,14 @@
   font-family: "KC Pixel Hand";
 }
 
+.Dictionary-form input {
+  width: 30%;
+}
+
+ul.Synonyms {
+  list-style: none;
+}
+
 .Meaning-example {
   font-style: italic;
 }
