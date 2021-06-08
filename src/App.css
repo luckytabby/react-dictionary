@@ -10,8 +10,17 @@
   width: 30%;
 }
 
+.Photos img {
+  max-width: 30%;
+}
+
 ul.Synonyms {
   list-style: none;
+  padding: 15px;
+}
+
+li.Synonyms {
+  display: inline-block;
 }
 
 .Meaning-example {
