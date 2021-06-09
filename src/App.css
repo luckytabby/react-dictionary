@@ -6,6 +6,7 @@
   align-content: center;
   justify-content: center;
   color: #16193c;
+  background-color: rgba(229, 229, 247, 0.5);
 }
 
 .App-header {
@@ -17,6 +18,11 @@
   font: 2.5em/1em "KC Pixel Hand";
 }
 
+.App-signature {
+  font: 1em/2em "KC Pixel Hand";
+  padding: 10px 5px;
+}
+
 .Dictionary input,
 textarea {
   font: 1em/1.5em "Helvetica Neue";
@@ -25,12 +31,15 @@ textarea {
   padding: 0 8px;
   margin: 0;
   max-width: 60%;
-  background: none;
+  background: #efeff3;
+  color: #16193c;
 }
 
 .Photos img {
-  max-width: 80%;
+  max-width: 70%;
   margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 6px 1px #16193c;
 }
 
 .row {
