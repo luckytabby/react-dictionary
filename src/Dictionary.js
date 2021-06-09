@@ -31,7 +31,7 @@ export default function Dictionary(props) {
 
         let pexelsApiKey = `563492ad6f917000010000012299fd19b42d4a9abc16c4b7b5e62e29`
 
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`
 
         axios.get(pexelsApiUrl, {headers: { Authorization: `Bearer ${pexelsApiKey}` }}).then(handlePexelsResponse);
 
@@ -57,17 +57,25 @@ export default function Dictionary(props) {
 
             <div className="Dictionary">
 
-                <form className="Dictionary-form" onSubmit={handleSubmit}>
+                <section>
 
-                    <input type="search" autoFocus="on"
-                    placeholder="Enter a word..." onChange={handleKeywordChange}>
-                    </input>
+                    <form className="Dictionary-form" onSubmit={handleSubmit}>
 
-                </form>
+                        <input type="search" autoFocus="on"
+                        placeholder="Enter a word..." onChange={handleKeywordChange}>
+                        </input>
 
-                <Response response={response}/>
+                    </form>
 
-                <Photos photos={photos} />
+                    <Response response={response}/>
+
+                </section>
+
+                <section>
+
+                    <Photos photos={photos} />
+
+                </section>
 
             </div>
 

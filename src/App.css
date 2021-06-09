@@ -1,33 +1,56 @@
 .App {
   text-align: center;
+  font: "Helvetica Neue";
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: #16193c;
 }
 
 .App-header {
-  background-color: purple;
+  color: #16193c;
   margin: 0 0 20px 0;
 }
 
 .App-heading {
-  font-family: "KC Pixel Hand";
+  font: 2.5em/1em "KC Pixel Hand";
 }
 
-.Dictionary-form input {
-  width: 30%;
+.Dictionary input,
+textarea {
+  font: 1em/1.5em "Helvetica Neue";
+  border: solid 2px #16193c;
+  border-radius: 8px;
+  padding: 0 8px;
+  margin: 0;
+  max-width: 60%;
+  background: none;
 }
 
 .Photos img {
-  max-width: 30%;
+  max-width: 80%;
+  margin: 20px 10px;
 }
 
-ul.Synonyms {
-  list-style: none;
-  padding: 15px;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-li.Synonyms {
+.Synonyms {
   display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
 }
 
 .Meaning-example {
