@@ -1,8 +1,15 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
+  background-color: purple;
+  margin: 0 0 20px 0;
+}
+
+.App-heading {
   font-family: "KC Pixel Hand";
 }
 
