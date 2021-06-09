@@ -10,7 +10,7 @@ export default function Photos(props) {
                         return (
                             <div className="col" key={index}>
                                 <a href={photo.src.original} target="_blank" rel="noopener noreferrer">
-                                    <img src={photo.src.landscape}  alt="decorative image of search subject" />
+                                    <img src={photo.src.landscape}  alt="the term defined above" />
                                 </a>
                             </div>
                         )
