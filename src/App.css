@@ -1,8 +1,10 @@
 @font-face {
   font-family: "kc_pixel_handregular";
-  src: local("KCPixelHand"),
-    url("src/typography/kcPixelHand/kcpixelhand-webfont.woff2") format("woff2"),
-    url("src/typography/kcpixelhand-webfont.woff") format("woff");
+  src: local("/Users/maggiemcdonald/Downloads/KCPixelHand"),
+    url("/Users/maggiemcdonald/Documents/react-dictionary/src/typography/kcpixelhand-webfont.woff")
+      format("woff2"),
+    url("/Users/maggiemcdonald/Documents/react-dictionary/src/typography/kcpixelhand-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,11 +26,11 @@
 }
 
 .App-heading {
-  font: 2.5em/1em "KC Pixel Hand";
+  font: 2.5em/1em "kc_pixel_handregular";
 }
 
 .App-signature {
-  font: 1em/2em "KC Pixel Hand";
+  font: 1em/2em "kc_pixel_handregular";
   padding: 10px 5px;
 }
 
