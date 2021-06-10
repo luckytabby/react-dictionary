@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: "kc_pixel_handregular";
-  src: url("https://digitaldictionary.netlify.app/src/kcpixelhand/kcpixelhand-webfont.woff2")
+  src: url("https://digitaldictionary.netlify.app/src/kcPixelHand/kcpixelhand-webfont.woff2")
       format("woff2"),
-    url("https://digitaldictionary.netlify.app/src/kcpixelhand/kcpixelhand-webfont.woff")
+    url("https://digitaldictionary.netlify.app/src/kcPixelHand/kcpixelhand-webfont.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
